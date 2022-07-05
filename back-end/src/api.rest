@@ -1,0 +1,27 @@
+###
+GET http://localhost:3000/empleados
+
+###
+POST http://localhost:3000/empleados
+Content-Type: application/json
+
+{
+    "nombre": "Oscar",
+    "puesto": "Alumno",
+    "email": "oscarp@utng.com",
+    "sueldo": 60000
+}
+
+###
+GET http://localhost:3000/empleados/62c32f9f4c6303cb32a719b5
+
+###
+DELETE  http://localhost:3000/empleados/62c32f9f4c6303cb32a719b5
+
+###
+PUT http://localhost:3000/empleados/62bf18a6014c95e36cfad28b
+Content-Type: application/json
+{
+  "puesto": "Programador",
+  "sueldo": 25000
+}
